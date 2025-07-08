@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import MovieCard from "../assets/components/MovieCard";
 import { fetchMoviesByGenres } from "../services/api";
-import "../assets/components/css/recommended.css"; //  Import consistent styling
+import "../assets/components/css/Recommended.css"; //  Import consistent styling
 import "../assets/components/css/Home.css"; //  Ensure this is in Favorites.jsx, Recommended.jsx, etc.
 
 
