@@ -112,7 +112,7 @@ I wanted to go beyond a typical CRUD-based React project and explore how client-
 ## 🚀 Getting Started 
 From setup to launch in minutes!
 
-📦 Prerequisites
+**📦 Prerequisites**
 
 - Node.js (v16+ recommended)
 
@@ -123,7 +123,7 @@ From setup to launch in minutes!
 - Hugging Face API Key (Free tier — get from [Hugging Face](https://huggingface.co/))
 
 
-📥 Installation Steps
+**📥 Installation Steps**
 
 Follow these steps to set up the project locally:
 
@@ -147,7 +147,7 @@ npm run dev
 
 
 
-🌐 Access the Web
+**🌐 Access the Web**
 After running npm run dev, open:
 
 http://localhost:5173/
@@ -200,7 +200,7 @@ VITE_HUGGINGFACE_API_KEY=your_huggingface_key_here
 
 
 ## 📚 What I Learned
-✅ Technical Learnings
+**✅ Technical Learnings**
 - Gained hands-on experience with React fundamentals like state, props, effects, and component structuring.
 
 - Integrated real-world APIs (TMDB & Hugging Face), handled dynamic queries, and processed async data in the UI.
@@ -211,7 +211,7 @@ VITE_HUGGINGFACE_API_KEY=your_huggingface_key_here
 
 - Debugged edge cases such as API inconsistencies, subword tokens, and filter conflicts — improving problem-solving skills.
 
-💡 Non-Technical Learnings
+**💡 Non-Technical Learnings**
 - Improved persistence and debugging through real-world issues with third-party APIs.
 
 - Focused on user-first thinking by making the app feel more interactive, accessible, and assistant-like.
