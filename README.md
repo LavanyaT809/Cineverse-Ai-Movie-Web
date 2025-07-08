@@ -24,17 +24,41 @@ Instead of using typical filters and dropdowns, this project uses Named Entity R
 ## 📸 Screenshots
 
 <div align="center">
-🏠 Homepage
-<img src="screenshots/Home.png" alt="Homepage" width="570"/>
-🤖 AI Chatbot Filtering
-<img src="screenshots/chatbot.png" alt="Chatbot Filtering" width="570"/>
-🗣️ Prompt Example
-<img src="screenshots/Prompt-chatbot.png" alt="Prompt Example" width="570"/>
-🎙️ Voice Search
-<img src="screenshots/voice-search.png" alt="Voice Search" width="570"/>
-❤️ Favorites Section
-<img src="screenshots/favorite.png" alt="Favorites" width="570"/> </div>
 
+<!-- Homepage -->
+<p><strong>🏠 Homepage</strong><br/>
+Displays trending and recommended movies with a clean card layout.</p>
+<img src="screenshots/Home.png" alt="Homepage" width="570" height="300"/>
+
+<br/><br/>
+
+<!-- AI Chatbot -->
+<p><strong>🤖 AI Chatbot Filtering</strong><br/>
+Natural language queries processed via Hugging Face NER model.</p>
+<img src="screenshots/chatbot.png" alt="Chatbot Filtering" width="570" height="300"/>
+
+<br/><br/>
+
+<!-- Prompt Example -->
+<p><strong>🗣 Prompt Example</strong><br/>
+Example query like: <em>"horror movies from 2019"</em>.</p>
+<img src="screenshots/Prompt-chatbot.png" alt="Prompt Example" width="570" height="300"/>
+
+<br/><br/>
+
+<!-- Voice Search -->
+<p><strong>🎙 Voice Search</strong><br/>
+Use microphone to search movies using voice commands.</p>
+<img src="screenshots/voice-search.png" alt="Voice Search" width="570" height="300"/>
+
+<br/><br/>
+
+<!-- Favorites -->
+<p><strong>❤ Favorites Section</strong><br/>
+Easily add or remove favorite movies.</p>
+<img src="screenshots/favorite.png" alt="Favorites" width="570" height="300"/>
+
+</div>
 
 
 
