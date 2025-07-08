@@ -1,5 +1,5 @@
 
-# 🎬 SINEVERSE AI – Conversational Movie Search Website with AI-Inspired Filtering & Speech Recognition
+# 🎬 CINEVERSE AI – Conversational Movie Search Website with AI-Inspired Filtering & Speech Recognition
 
 A unique AI-powered React movie platform that lets users search for movies using natural language voice or text queries — just like chatting with an assistant!
 
