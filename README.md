@@ -8,7 +8,7 @@ Instead of using typical filters and dropdowns, this project uses Named Entity R
 
 ## 🔗 Project Links
 - **Live Demo**: [https://cineverse-ai-movie-search.netlify.app/](https://cineverse-ai-movie-search.netlify.app/p)
-- **GitHub Repository**: [https://github.com/lavanya-tuptewar/sineverse-ai](https://github.com/lavanya-tuptewar/sineverse-ai)
+- **GitHub Repository**: [https://github.com/LavanyaT809/Cineverse-Ai-Movie-Web](https://github.com/LavanyaT809/Cineverse-Ai-Movie-Web)
 
 
 ## 📸 Screenshots
