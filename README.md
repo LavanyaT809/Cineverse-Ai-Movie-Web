@@ -67,7 +67,7 @@ Easily add or remove favorite movies.</p>
 
 
 ## 🚀 Features
-🧠 Unique & Smart Features (USP)
+#🧠 Unique & Smart Features (USP)
 
 •	Voice Search using Web Speech API – search movies without typing
 
