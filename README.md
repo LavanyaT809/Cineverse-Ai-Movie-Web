@@ -66,15 +66,15 @@ Easily add or remove favorite movies.</p>
 ## 🚀 Features
  **🧠 Unique & Smart Features (USP)**
 
-•	Voice Search using Web Speech API – search movies without typing
+•	**Voice Search** using Web Speech API – search movies without typing
 
-•	AI-Powered Chatbot using Hugging Face NER – extract actor, genre, year, rating from natural text like “thriller movies with SRK from 2023”
+•	**AI-Powered Chatbot** using Hugging Face NER – extract actor, genre, year, rating from natural text like “thriller movies with SRK from 2023”
 
-•	Speech Output – results are read aloud using SpeechSynthesis 
+•	**Speech Output** – results are read aloud using SpeechSynthesis 
 
-•	Conversational Filtering – mimics smart chatbot experience without using backend logic
+•	**Conversational Filtering** – mimics smart chatbot experience without using backend logic
 
-•	Frontend-only AI Integration – Hugging Face & Web APIs used directly in browser
+•	**Frontend-only AI Integration** – Hugging Face & Web APIs used directly in browser
 
 **✅ Common Features**
 
@@ -105,7 +105,8 @@ Easily add or remove favorite movies.</p>
 | **Deploy**   | GitHub Pages / Netlify (Recommended for frontend projects) 
 
 ## 🧠 Why I Built This
-I wanted to go beyond a typical CRUD-based React project and explore how client-side apps can feel intelligent, accessible, and  user-friendly. Instead of relying on just clicks and inputs, I integrated voice search, speech output, and AI-powered filtering to mimic a chatbot-like assistant — all without a backend. This project focuses on accessibility and natural interaction, showing how even frontend-only apps can deliver intelligent, user-friendly experiences.
+I wanted to go beyond a basic CRUD React app and explore how client-side apps can feel intelligent, accessible, and interactive. This project is designed to be an **AI-enhanced assistant** that interacts like a chatbot — all using only frontend technologies.
+
 ## 🚀 Getting Started 
 From setup to launch in minutes!
 
