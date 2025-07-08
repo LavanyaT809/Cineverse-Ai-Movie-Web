@@ -1,0 +1,136 @@
+/*  Entire Wrapper */
+.chatbot-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/*  Floating Button (Oval Ask Me Button) */
+.chatbot-toggle {
+  background: linear-gradient(to right, #8b0000, #a30000, #000000); /* Red to Black gradient */
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.5);
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.chatbot-toggle:hover {
+  box-shadow: 0 0 18px rgba(255, 0, 0, 0.8);
+  transform: scale(1.05);
+}
+
+/*  Tooltip for Floating Button */
+.chatbot-tooltip {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  margin-bottom: 6px;
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.chatbot-toggle-container:hover .chatbot-tooltip {
+  opacity: 1;
+}
+
+/*  Chat Popup Container */
+.chatbot-popup {
+  margin-top: 10px;
+  background: #1f1f1f;
+  border: 2px solid #e50914;
+  border-radius: 12px;
+  width: 300px;
+  padding: 1rem;
+  box-shadow: 0 0 25px rgba(229, 9, 20, 0.5);
+}
+
+/*  Header Text */
+.chatbot-header {
+  font-size: 1.2rem;
+  color: #e50914;
+  text-align: center;
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+}
+
+/*  Messages Display Section */
+.chatbot-messages {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+/*  Individual Message Styling */
+.chatbot-message {
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+}
+
+.user-msg {
+  color: #00ffd0; /* Cyan for user */
+}
+
+.bot-msg {
+  color: #ffffff; /* White for bot */
+}
+
+/*  Input + Button Container */
+.chatbot-input input {
+  width: 100%;
+  padding: 0.5rem;
+  background: #2a2a2a;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+/*  Placeholder Text */
+.chatbot-input input::placeholder {
+  color: #cccccc;
+}
+
+/*  Buttons (Send + Clear) */
+.chatbot-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/*  Send Button */
+.chatbot-input button {
+  flex: 1;
+  padding: 0.5rem;
+  background: #e50914;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.chatbot-input button:hover {
+  background: #ff1b1b;
+}
+
+/*  Clear Button */
+.clear-btn {
+  background: #444;
+  color: #eee;
+}
+
+.clear-btn:hover {
+  background: #666;
+}

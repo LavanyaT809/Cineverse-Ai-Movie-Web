@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* Grid container where Movie-card is used must have display: flex (in your main layout or Home.css) */
+
+.Movie-card {
+  background-color: #1e1e1e;
+  border-radius: 11px;
+  overflow: visible;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+  width: 250px;
+  transform-origin: center center; /* Makes scaling centered */
+  z-index: 1;
+  will-change: transform;
+  margin-bottom: 0.4rem; 
+ 
+  
+}
+
+.Movie-card:hover {
+  
+  transform: scale(1.1) translateY(-8px) !important;
+}
+
+
+
+.genre-filter {
+  text-align: center;
+  margin: 1rem 0 1.5rem 0; /* ⬅ bottom spacing below genre dropdown */
+}
+
+.movies-grid {
+  margin-top: 0; /* Optional, ensure not conflicting */
+  padding-top: 0; /* Optional */
+}
+
+/* Poster image */
+.Movie-Poster {
+  width: 100%;
+  height: 255px;
+}
+.Movie-Poster img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Top-right overlay for favorite button */
+.Movie-Overlay {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+/* Favorite (heart) button */
+.favorite-btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.favorite-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Movie info block (title + year) */
+.Movie-Info {
+  padding: 0.6rem;
+  text-align: center;
+  color: white;
+}
+.Movie-Info p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.3px;
+  text-shadow:
+    1px 1px 2px rgba(0, 0, 0, 0.7),
+    2px 2px 4px rgba(0, 0, 0, 0.6),
+    3px 3px 6px rgba(0, 0, 0, 0.5),
+    0 0 4px rgba(255, 255, 255, 0.2),
+    0 0 8px rgba(255, 255, 255, 0.1);
+}
+.Movie-Info h3 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+/* Rating in gold with glow */
+.Movie-Rating {
+  font-size: 1rem;
+  color: gold;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin-top: 4px;
+  text-shadow: 1px 1px 2px black;
+}
+
+/* Movie overview text */
+.Movie-Overview {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #e0e0e0;
+  text-align: center;
+  padding: 0 0.4rem;
+  margin-top: 0.4rem;
+  max-height: 3em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* Modal backdrop */
+.Modal-Backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal content box */
+.Modal-Content {
+  background-color: #1f1f1f;
+  padding: 20px 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  animation: fadeIn 0.3s ease;
+}
+
+/* Close button for modal */
+.Modal-Close {
+  margin-top: 15px;
+  background-color: #333;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.Modal-Close:hover {
+  background-color: #555;
+}
+
+/* Clickable overview style */
+.Movie-Overview.clickable {
+  cursor: pointer;
+  color: #ccc;
+  font-style: italic;
+}
+
+/* Modal fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Read more link */
+.read-more {
+  color: #aaa;
+  font-style: italic;
+  font-size: 0.75rem;
+  margin-left: 4px;
+}
+.read-more:hover {
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*  Fade-in animation for card pop */
+@keyframes fadePopIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.fade-in-card {
+  animation: fadePopIn 0.4s ease-out forwards;
+}
+
+.trailer-btn {
+  background: linear-gradient(to bottom, #e50914, #a10000); /* Red gradient */
+   color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 15px;
+  margin-top: 8px;
+  font-weight: 500;
+  font-family: 'Segoe UI', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+
+}
+
+.trailer-btn:hover {
+  background: linear-gradient(to bottom, #ff1f1f, #8b0000);
+  transform: translateY(-1px);
+   box-shadow: 0 0 12px rgba(255, 0, 0, 0.3);
+
+}
+
+.no-trailer-msg {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #f44336;
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 0.7rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight:450px ;
+  font-family: 'Inter', sans-serif;
+}
+

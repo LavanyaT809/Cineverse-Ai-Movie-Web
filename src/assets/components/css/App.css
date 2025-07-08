@@ -1,0 +1,44 @@
+/*  Reset margins & ensure no horizontal overflow on body, html, and root div */
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;  /* Prevent unwanted horizontal scroll */
+  max-width: 100vw;     /* Prevent body from exceeding viewport width */
+}
+
+/*  Movie Card component layout */
+.Movie-card {
+  width: 100%;
+  max-width: 180px; /* Optional fixed width for desktop */
+  box-sizing: border-box;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;    /* Stack children vertically */
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* 🧩 Hide vertical scrollbar (for modern browsers) */
+/* Firefox-specific scrollbar hiding */
+main.main-content {
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+
+/* For IE and Edge */
+main.main-content {
+  -ms-overflow-style: none;
+}
+
+/* For WebKit browsers (Chrome, Safari) */
+main.main-content::-webkit-scrollbar {
+  display: none;
+}
