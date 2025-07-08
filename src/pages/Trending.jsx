@@ -4,7 +4,7 @@ import "../assets/components/css/Home.css"; //  Ensure this is in Favorites.jsx,
 import { useEffect, useState } from "react";
 import { fetchTrendingMovies } from "../services/api";
 import MovieCard from "../assets/components/MovieCard";
-import "../assets/components/css/trending.css"; //  Use consistent style
+import "../assets/components/css/Trending.css"; //  Use consistent style
 
 function Trending({ favorites, toggleFavorite }) {
   const [movies, setMovies] = useState([]);
